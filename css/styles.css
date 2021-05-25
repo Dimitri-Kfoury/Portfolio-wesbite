@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Shadows Into Light";
-  src: url(../ShadowsIntoLight-Regular.ttf);
+  src: url(../fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
 }
 
 @font-face {
@@ -129,7 +129,7 @@ main {
   width: 90%;
   height: 710px;
 
-  background-image: url(../michele-bitetto-2y6ojwauKJI-unsplash.jpg);
+  background-image: url(../images/michele-bitetto-2y6ojwauKJI-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -330,10 +330,6 @@ border-radius: 4px;
 
 }
 
-
-.projects .description-container::-webkit-scrollbar-thumb:hover {
-  
-}
 
 
 
