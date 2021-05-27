@@ -17,14 +17,13 @@ html {
   color: black;
 }
 
-
 section {
   padding: 70px 5%;
   border-bottom: 1px black dotted;
 }
 
 section:nth-of-type(even) {
-  background-color:  hsla(213 ,0% ,0%, 0.02);
+  background-color: hsla(213, 0%, 0%, 0.02);
 }
 
 h1 {
@@ -74,13 +73,13 @@ header img {
 
 header nav {
   display: flex;
-  width: 300px;
+  width: 400px;
   justify-content: space-around;
   margin-right: 1.5rem;
 }
 
 header nav a {
-  font-family: 'Shadows Into Light',Roboto, Geneva, Tahoma, sans-serif;
+  font-family: "Shadows Into Light", Roboto, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
   font-size: 1.8rem;
@@ -88,40 +87,29 @@ header nav a {
 }
 
 @media screen and (max-width: 1075px) {
-
-  header nav a{
+  header nav a {
     font-size: 1.5rem;
   }
-
-
 }
 
-
 @media screen and (max-width: 685px) {
-  header nav a{
+  header nav a {
     font-size: 1rem;
   }
 }
-  
-  @media screen and (max-width: 430px) {
 
-    header nav {
-      display: none;
-    }
-  
-
-   
+@media screen and (max-width: 430px) {
+  header nav {
+    display: none;
+  }
 }
-
-
-
 
 /* main section */
 
 main {
   position: relative;
   top: 70px;
-  background-color:  hsla(213 ,42% ,31%, 0.1);
+  background-color: hsla(213, 42%, 31%, 0.1);
 }
 
 /* banner */
@@ -219,146 +207,149 @@ main {
 /* projects navbar */
 
 .projects .projects-grid {
+  width: 40%;
+  height: 400px;
 
+  display: grid;
 
-width:40%;
-height: 400px;
+  grid-template-columns: 1fr;
 
-display: grid;
+  grid-template-rows: 0.75fr 6fr;
 
-grid-template-columns: 1fr;
-
-grid-template-rows: 0.75fr 6fr;
-
-
-margin: 1.5rem auto 0;
-grid-gap: 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  margin: 1.5rem auto 0;
+  grid-gap: 0;
 }
 
 .projects nav {
-  
   display: flex;
- 
+
   justify-content: flex-start;
   grid-area: 1 / 1 / 2 / 2;
-
- 
-
-  
 }
 
-.projects .projects-navbar-toggle{
-
-border:none;
-background-color: none;
-
-
+.projects .projects-navbar-toggle {
+  border: none;
+  background-color: none;
 }
 
 .projects nav .project-toggle {
+  border: none;
+  border-left: 0.5px solid white;
 
-  
-  border:none;
-  border-left: 1px solid white;
-  
   cursor: pointer;
-  
 
   background-color: none;
-  
 }
 
+.projects nav .project-toggle:nth-of-type(4n + 0) {
+  border-right: 0.5px solid white;
+}
 
 @media screen and (max-width: 1315px) {
-
   .projects nav .project-toggle {
-
     font-size: 0.9rem;
-    
-
-
   }
-
-  
 }
-
-
 
 .projects .description-container {
-  
   display: flex;
   align-items: center;
-
-  
 }
 
-
-.projects .description-container::-webkit-scrollbar{
-
-width: 4px;
-height: 4px;
-
+.projects .description-container::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
 }
-
-
-
 
 .projects .description-container::-webkit-scrollbar-track {
-  background-color: hsla(200 ,50% ,0%, 0.2);
+  background-color: hsla(200, 50%, 0%, 0.2);
   border-radius: 4px;
 }
- 
+
 .projects .description-container::-webkit-scrollbar-thumb {
-  
-background-color:hsla(200 ,50% ,10%, 0.5);
-border-radius: 4px;
-
+  background-color: hsla(200, 50%, 10%, 0.5);
+  border-radius: 4px;
 }
-
-
-
-
 
 .projects .description-container p {
   display: none;
   padding: 2%;
   grid-area: 2 / 1 / 2 / 3;
+}
 
+/* Contact section */
+
+
+.contact {
+
+overflow: hidden;
+
+}
+
+
+.contact .contact-content {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  
+
+}
+
+.contact .contact-info {
+  display: flex;
+  flex-direction: column;
+
+
+  align-items: center;
+  justify-content: center;
+  
+  min-width: 100px;
+
+  
+
+
+
+
+}
+.contact figure img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.contact figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  
+}
+
+.contact figcaption {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.contact p {
   
  
-}
+  overflow-wrap: break-word;
 
-
-
-@media  screen and (max-width:445px) {
-
-  .projects .description-container p {
-
-    font-size: 1rem;
-
-
-  }
-
+  
   
 }
 
-@media  screen and (max-width:445px) {
 
+@media screen and (max-width:450px) {
+
+
+.contact figure{
+
+display: none;
+
+
+}
 
 
   
